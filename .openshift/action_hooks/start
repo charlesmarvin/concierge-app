@@ -2,4 +2,4 @@ export JAVA_HOME="$OPENSHIFT_DATA_DIR/jdk/jdk1.8.0_05"
 export PATH=$JDK8_PATH:$PATH
 
 cd $OPENSHIFT_REPO_DIR/web
-nohup mvn exec:java -Dexec.mainClass="com.ca.web.App"
+nohup java -jar target/web-app-1.0-SNAPSHOT.jar
